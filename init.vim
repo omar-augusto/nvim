@@ -4,6 +4,9 @@ call plug#begin('~/.confif/nvim/plugged')
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'PProvost/vim-ps1'
 
+" Multicursor / selector for vim
+Plug 'mg979/vim-visual-multi', {'branch': 'master'}
+
 "----------------------
 " Colorschemes
 
