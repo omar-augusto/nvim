@@ -18,6 +18,7 @@ Plug 'NLKNguyen/papercolor-theme'
 Plug 'ayu-theme/ayu-vim'
 Plug 'hiroakis/cyberspace.vim'
 Plug 'simmxns/purpledepth'
+Plug 'gerardbm/vim-atomic'
 "Plug 'rebelot/kanagawa.vim'
 
 " _____________________
@@ -78,7 +79,7 @@ command! Scratch lua require'tools'.makeScratch()
 "let ayucolor = 'dark'
 
 set background=dark
-colorscheme voir
+colorscheme atoic
 
 let g:airline_theme = 'ayu'
 
