@@ -72,6 +72,11 @@ set termguicolors
 
 command! Scratch lua require'tools'.makeScratch()
 
+" Visual-multi remapping, conflicts with C-n for NERDTree
+let g:VM_maps = {}
+let g:VM_maps['Find Under']         = '<C-d>'           " replace C-n
+let g:VM_maps['Find Subword Under'] = '<C-d>'           " replace visual C-n
+
 " Tabby setup
 "lua require"tabby".setup()
 
