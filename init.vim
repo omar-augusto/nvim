@@ -79,7 +79,7 @@ command! Scratch lua require'tools'.makeScratch()
 "let ayucolor = 'dark'
 
 set background=dark
-colorscheme atoic
+colorscheme atomic
 
 let g:airline_theme = 'ayu'
 
