@@ -85,9 +85,6 @@ let g:airline_theme = 'ayu'
 
 filetype plugin on
 
-" Flow support https://flow.org
-" let g:javascript_plugin_flow
-
 let g:javascript_plugin_jsdoc = 1
 
 let g:python3_host_prog = '/usr/local/bin/python'
@@ -97,9 +94,6 @@ nmap <silent> <c-k> :wincmd k<CR>
 nmap <silent> <c-j> :wincmd j<CR>
 nmap <silent> <c-h> :wincmd h<CR>
 nmap <silent> <c-l> :wincmd l<CR>
-
-" Search for visually selected text
-vnoremap // y/\V<C-R>=escape(@",'/\')<CR><CR>
 
 inoremap jk <ESC>
 
@@ -143,22 +137,20 @@ let fortran_more_precise = 1
 let fortran_do_enddo = 1
 " _____________________
 
-"-----------------------
 " Prettier Config
+"-----------------------
 
 let g:prettier#config#single_quote = 'true'
 let g:prettier#config#config_precedence = 'file-override'
 "_______________________
 
-"-----------------------
 " NERDTree Conf
+"-----------------------
 
 nmap <C-n> :NERDTreeToggle<CR>
 
 let g:NERDTreeIgnore = ['^node_modules$']
 let g:NERDTreeGitStatusConcealBrackets = 1
-"let g:NERDTreeDirArrowExpandable = '>'
-"let g:NERDTreeDirArrowCollapsible = 'v'
 
 " NERDTree Git Plugin
 " ----------------------------
@@ -176,10 +168,6 @@ let g:NERDTreeGitStatusIndicatorMapCustom = {
     \ 'Unknown'   :'?',
     \ }
 
-" If another buffer tries to replace NERDTree, put it in the other window, and bring back NERDTree.
- "autocmd BufEnter * if bufname('#') =~ 'NERD_tree_\d\+' && bufname('%') !~ 'NERD_tree_\d\+' && winnr('$') > 1 |
-     "\ let buf=bufnr() | buffer# | execute "normal! \<C-W>w" | execute 'buffer'.buf | endif
-
 " Sync open file with NERDTree
 " ----------------------------
 
@@ -195,21 +183,16 @@ function! SyncTree()
         NERDTreeFind
     endif
 endfunction
-
-" Highlight currently open buffer in NERDTree
-"autocmd BufEnter * call SyncTree()
 "_______________________
 
-"-----------------------
 " CntrlP Conf
+"-----------------------
 
 let g:ctrlp_user_command = ['.git/', 'git --git-dir=%s/.git ls-files -oc --exclude-standard']
 "_______________________
 
-"-----------------------
 " Coc config
-
-"let g:python3_host_prog = 'C:\Python39\python.exe'
+"-----------------------
 
 let g:coc_global_extensions = [
     \ 'coc-snippets',
