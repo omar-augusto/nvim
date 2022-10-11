@@ -42,6 +42,9 @@ packer.startup(function(use)
   use 'tpope/vim-fugitive' -- Complement to command line git
   use 'airblade/vim-gitgutter' -- Buffer git integration
 
+  -- HTTP Client
+  use 'NTBBloodbath/rest.nvim'
+
   -- Javascript
   use 'pangloss/vim-javascript' -- Improved highlighting for JS
 
