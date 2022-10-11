@@ -13,10 +13,10 @@ vim.keymap.set('n', 'sv', ':vsplit<Return><C-w>w')
 
 -- Navigate windows
 vim.keymap.set('n', '<Space>', '<C-w>w')
-vim.keymap.set('n', 'sh', '<C-w>h')
-vim.keymap.set('n', 'sk', '<C-w>k')
-vim.keymap.set('n', 'sj', '<C-w>j')
-vim.keymap.set('n', 'sl', '<C-w>l')
+vim.keymap.set('n', '<C-h>', '<C-w>h')
+vim.keymap.set('n', '<C-k>', '<C-w>k')
+vim.keymap.set('n', '<C-j>', '<C-w>j')
+vim.keymap.set('n', '<C-l>', '<C-w>l')
 
 -- Resize window
 vim.keymap.set('n', '<C-w><up>', '<C-w>+')
