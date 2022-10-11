@@ -38,10 +38,6 @@ packer.startup(function(use)
   -- Distraction-free mode
   use 'junegunn/goyo.vim'
   
-  -- Fuzzy finder
-  use 'RishabhRD/popfix'
-  use 'RishabhRD/nvim-finder'
-
   -- Git
   use 'tpope/vim-fugitive' -- Complement to command line git
   use 'airblade/vim-gitgutter' -- Buffer git integration
