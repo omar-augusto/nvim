@@ -70,6 +70,12 @@ packer.startup(function(use)
   -- Text Alignment
   use 'godlygeek/tabular'
 
+  -- Tree Sitter
+  use {
+    'nvim-treesitter/nvim-treesitter',
+    run = function() require('nvim-treesitter.install').update({ with_sync = true }) end,
+  }
+
   -- JSON 
   use 'elzr/vim-json'
 end)
