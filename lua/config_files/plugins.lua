@@ -51,6 +51,9 @@ packer.startup(function(use)
   -- Lua library
   use 'nvim-lua/plenary.nvim'
 
+  -- LSP
+  use 'neovim/nvim-lspconfig'
+
   -- Markdown
   use 'plasticboy/vim-markdown'
 
