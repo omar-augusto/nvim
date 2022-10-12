@@ -227,7 +227,7 @@ neotree.setup({
 })
 
 vim.keymap.set('n', '/', ':Neotree toggle current reveal_force_cwd<cr>')
-vim.keymap.set('n', '|', ':Neotree toggle float<cr>')
+vim.keymap.set('n', '|', ':Neotree toggle reveal<cr>')
 vim.keymap.set('n', '<leader>b', ':Neotree toggle show buffers right<cr>')
 vim.keymap.set('n', '<leader>s', ':Neotree float git_status<cr>')
 
