@@ -57,6 +57,11 @@ packer.startup(function(use)
   -- Markdown
   use 'plasticboy/vim-markdown'
 
+  use({
+    "iamcco/markdown-preview.nvim",
+    run = function() vim.fn["mkdp#util#install"]() end,
+  })
+
   -- Neotree
   use {
     'nvim-neo-tree/neo-tree.nvim',
