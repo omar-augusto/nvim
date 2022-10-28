@@ -1,2 +1,2 @@
-vim.cmd[[colorscheme atomic]]
+vim.cmd[[colorscheme humanoid]]
 vim.opt.background = 'dark'
