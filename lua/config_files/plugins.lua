@@ -29,6 +29,7 @@ packer.startup(function(use)
   use 'PierreCapo/voir.vim'
   use 'hiroakis/cyberspace.vim'
   use 'humanoid-colors/vim-humanoid-colorscheme'
+  use 'uu59/vim-herokudoc-theme'
 
   -- Complition Engine
   use {
