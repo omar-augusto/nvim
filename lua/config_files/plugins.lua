@@ -12,6 +12,8 @@ packer.startup(function(use)
   -- Align packages alphabetically by topic
   -----------------------------------------
 
+  use 'stevearc/aerial.nvim'
+
   -- Airline
   use 'vim-airline/vim-airline'
   use 'vim-airline/vim-airline-themes'
