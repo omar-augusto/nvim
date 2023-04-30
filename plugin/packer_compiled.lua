@@ -74,40 +74,40 @@ end
 time([[try_loadstring definition]], false)
 time([[Defining packer_plugins]], true)
 _G.packer_plugins = {
-  ["ayu-vim"] = {
+  ["aerial.nvim"] = {
     loaded = true,
-    path = "/Users/omar/.local/share/nvim/site/pack/packer/start/ayu-vim",
-    url = "https://github.com/ayu-theme/ayu-vim"
+    path = "/Users/omar/.local/share/nvim/site/pack/packer/start/aerial.nvim",
+    url = "https://github.com/stevearc/aerial.nvim"
+  },
+  bogster = {
+    loaded = true,
+    path = "/Users/omar/.local/share/nvim/site/pack/packer/start/bogster",
+    url = "https://github.com/vv9k/bogster"
   },
   ["bufferline.nvim"] = {
     loaded = true,
     path = "/Users/omar/.local/share/nvim/site/pack/packer/start/bufferline.nvim",
     url = "https://github.com/akinsho/bufferline.nvim"
   },
-  ["cmp-buffer"] = {
+  ["coc.nvim"] = {
     loaded = true,
-    path = "/Users/omar/.local/share/nvim/site/pack/packer/start/cmp-buffer",
-    url = "https://github.com/hrsh7th/cmp-buffer"
-  },
-  ["cmp-nvim-lsp"] = {
-    loaded = true,
-    path = "/Users/omar/.local/share/nvim/site/pack/packer/start/cmp-nvim-lsp",
-    url = "https://github.com/hrsh7th/cmp-nvim-lsp"
-  },
-  ["cyberspace.vim"] = {
-    loaded = true,
-    path = "/Users/omar/.local/share/nvim/site/pack/packer/start/cyberspace.vim",
-    url = "https://github.com/hiroakis/cyberspace.vim"
+    path = "/Users/omar/.local/share/nvim/site/pack/packer/start/coc.nvim",
+    url = "https://github.com/neoclide/coc.nvim"
   },
   ["goyo.vim"] = {
     loaded = true,
     path = "/Users/omar/.local/share/nvim/site/pack/packer/start/goyo.vim",
     url = "https://github.com/junegunn/goyo.vim"
   },
-  ["lspkind-nvim"] = {
+  ["gruvbox-baby"] = {
     loaded = true,
-    path = "/Users/omar/.local/share/nvim/site/pack/packer/start/lspkind-nvim",
-    url = "https://github.com/onsails/lspkind-nvim"
+    path = "/Users/omar/.local/share/nvim/site/pack/packer/start/gruvbox-baby",
+    url = "https://github.com/luisiacc/gruvbox-baby"
+  },
+  ["markdown-preview.nvim"] = {
+    loaded = true,
+    path = "/Users/omar/.local/share/nvim/site/pack/packer/start/markdown-preview.nvim",
+    url = "https://github.com/iamcco/markdown-preview.nvim"
   },
   ["neo-tree.nvim"] = {
     loaded = true,
@@ -119,35 +119,30 @@ _G.packer_plugins = {
     path = "/Users/omar/.local/share/nvim/site/pack/packer/start/nerdcommenter",
     url = "https://github.com/preservim/nerdcommenter"
   },
+  ["nightfox.nvim"] = {
+    loaded = true,
+    path = "/Users/omar/.local/share/nvim/site/pack/packer/start/nightfox.nvim",
+    url = "https://github.com/EdenEast/nightfox.nvim"
+  },
+  ["nova.nvim"] = {
+    loaded = true,
+    path = "/Users/omar/.local/share/nvim/site/pack/packer/start/nova.nvim",
+    url = "https://github.com/zanglg/nova.nvim"
+  },
   ["nui.nvim"] = {
     loaded = true,
     path = "/Users/omar/.local/share/nvim/site/pack/packer/start/nui.nvim",
     url = "https://github.com/MunifTanjim/nui.nvim"
-  },
-  ["null-ls.nvim"] = {
-    loaded = true,
-    path = "/Users/omar/.local/share/nvim/site/pack/packer/start/null-ls.nvim",
-    url = "https://github.com/jose-elias-alvarez/null-ls.nvim"
-  },
-  ["nvim-cmp"] = {
-    loaded = true,
-    path = "/Users/omar/.local/share/nvim/site/pack/packer/start/nvim-cmp",
-    url = "https://github.com/hrsh7th/nvim-cmp"
-  },
-  ["nvim-finder"] = {
-    loaded = true,
-    path = "/Users/omar/.local/share/nvim/site/pack/packer/start/nvim-finder",
-    url = "https://github.com/RishabhRD/nvim-finder"
   },
   ["nvim-lspconfig"] = {
     loaded = true,
     path = "/Users/omar/.local/share/nvim/site/pack/packer/start/nvim-lspconfig",
     url = "https://github.com/neovim/nvim-lspconfig"
   },
-  ["nvim-web-devicons"] = {
+  ["nvim-treesitter"] = {
     loaded = true,
-    path = "/Users/omar/.local/share/nvim/site/pack/packer/start/nvim-web-devicons",
-    url = "https://github.com/kyazdani42/nvim-web-devicons"
+    path = "/Users/omar/.local/share/nvim/site/pack/packer/start/nvim-treesitter",
+    url = "https://github.com/nvim-treesitter/nvim-treesitter"
   },
   ["packer.nvim"] = {
     loaded = true,
@@ -164,20 +159,25 @@ _G.packer_plugins = {
     path = "/Users/omar/.local/share/nvim/site/pack/packer/start/plenary.nvim",
     url = "https://github.com/nvim-lua/plenary.nvim"
   },
-  popfix = {
+  ["rest.nvim"] = {
     loaded = true,
-    path = "/Users/omar/.local/share/nvim/site/pack/packer/start/popfix",
-    url = "https://github.com/RishabhRD/popfix"
+    path = "/Users/omar/.local/share/nvim/site/pack/packer/start/rest.nvim",
+    url = "https://github.com/NTBBloodbath/rest.nvim"
   },
-  ["prettier.nvim"] = {
+  ["simba.vim"] = {
     loaded = true,
-    path = "/Users/omar/.local/share/nvim/site/pack/packer/start/prettier.nvim",
-    url = "https://github.com/MunifTanjim/prettier.nvim"
+    path = "/Users/omar/.local/share/nvim/site/pack/packer/start/simba.vim",
+    url = "https://github.com/kartik1998/simba.vim"
   },
   tabular = {
     loaded = true,
     path = "/Users/omar/.local/share/nvim/site/pack/packer/start/tabular",
     url = "https://github.com/godlygeek/tabular"
+  },
+  ["tokyonight.nvim"] = {
+    loaded = true,
+    path = "/Users/omar/.local/share/nvim/site/pack/packer/start/tokyonight.nvim",
+    url = "https://github.com/folke/tokyonight.nvim"
   },
   ["vim-airline"] = {
     loaded = true,
@@ -194,6 +194,16 @@ _G.packer_plugins = {
     path = "/Users/omar/.local/share/nvim/site/pack/packer/start/vim-atomic",
     url = "https://github.com/gerardbm/vim-atomic"
   },
+  ["vim-deus"] = {
+    loaded = true,
+    path = "/Users/omar/.local/share/nvim/site/pack/packer/start/vim-deus",
+    url = "https://github.com/ajmwagar/vim-deus"
+  },
+  ["vim-firewatch"] = {
+    loaded = true,
+    path = "/Users/omar/.local/share/nvim/site/pack/packer/start/vim-firewatch",
+    url = "https://github.com/erizocosmico/vim-firewatch"
+  },
   ["vim-fugitive"] = {
     loaded = true,
     path = "/Users/omar/.local/share/nvim/site/pack/packer/start/vim-fugitive",
@@ -204,6 +214,11 @@ _G.packer_plugins = {
     path = "/Users/omar/.local/share/nvim/site/pack/packer/start/vim-gitgutter",
     url = "https://github.com/airblade/vim-gitgutter"
   },
+  ["vim-humanoid-colorscheme"] = {
+    loaded = true,
+    path = "/Users/omar/.local/share/nvim/site/pack/packer/start/vim-humanoid-colorscheme",
+    url = "https://github.com/humanoid-colors/vim-humanoid-colorscheme"
+  },
   ["vim-json"] = {
     loaded = true,
     path = "/Users/omar/.local/share/nvim/site/pack/packer/start/vim-json",
@@ -213,16 +228,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/omar/.local/share/nvim/site/pack/packer/start/vim-markdown",
     url = "https://github.com/plasticboy/vim-markdown"
-  },
-  ["vim-snippets"] = {
-    loaded = true,
-    path = "/Users/omar/.local/share/nvim/site/pack/packer/start/vim-snippets",
-    url = "https://github.com/honza/vim-snippets"
-  },
-  ["voir.vim"] = {
-    loaded = true,
-    path = "/Users/omar/.local/share/nvim/site/pack/packer/start/voir.vim",
-    url = "https://github.com/PierreCapo/voir.vim"
   }
 }
 
