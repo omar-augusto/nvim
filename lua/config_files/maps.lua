@@ -7,7 +7,7 @@ vim.keymap.set('n', 'bd', ':bd<cr>') -- remove buffer
 vim.keymap.set('n', 'dw', 'vb"_d')
 
 -- Git status
-vim.keymap.set('n', 'gs', ':Neotree float git_status')
+vim.keymap.set('n', 'gs', ':Neotree float git_status<cr>')
 
 -- Select all
 vim.keymap.set('n', '<C-a>', 'gg<S-v>G')
