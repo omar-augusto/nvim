@@ -47,6 +47,7 @@ packer.startup(function(use)
   use 'junegunn/goyo.vim'
   
   -- Git
+  use 'tpope/vim-git' -- Syntax, indent, and filetype plugin files for git commits
   use 'tpope/vim-fugitive' -- Complement to command line git
   use 'airblade/vim-gitgutter' -- Buffer git integration
 
