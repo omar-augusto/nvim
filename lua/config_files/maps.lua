@@ -6,6 +6,9 @@ vim.keymap.set('n', 'bd', ':bd<cr>') -- remove buffer
 -- Delete a word backwards
 vim.keymap.set('n', 'dw', 'vb"_d')
 
+-- Git status
+vim.keymap.set('n', 'gs', ':Neotree float git_status')
+
 -- Select all
 vim.keymap.set('n', '<C-a>', 'gg<S-v>G')
 
