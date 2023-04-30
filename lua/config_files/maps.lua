@@ -1,3 +1,8 @@
+-- Buffer navigation
+vim.keymap.set('n', 'bn', ':bn<cr>') -- next buffer
+vim.keymap.set('n', 'bp', ':bp<cr>') -- prev buffer
+vim.keymap.set('n', 'bd', ':bd<cr>') -- remove buffer
+
 -- Delete a word backwards
 vim.keymap.set('n', 'dw', 'vb"_d')
 
