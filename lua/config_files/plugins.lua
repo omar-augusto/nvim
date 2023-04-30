@@ -51,9 +51,6 @@ packer.startup(function(use)
   -- HTTP Client
   use 'NTBBloodbath/rest.nvim'
 
-  -- Javascript
-  use 'pangloss/vim-javascript' -- Improved highlighting for JS
-
   -- Lua library
   use 'nvim-lua/plenary.nvim'
 
