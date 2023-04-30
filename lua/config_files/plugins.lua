@@ -24,12 +24,16 @@ packer.startup(function(use)
 
   -- Colorschemes
   use 'NLKNguyen/papercolor-theme'
-  use 'ayu-theme/ayu-vim'
   use 'gerardbm/vim-atomic'
-  use 'PierreCapo/voir.vim'
-  use 'hiroakis/cyberspace.vim'
   use 'humanoid-colors/vim-humanoid-colorscheme'
-  use 'uu59/vim-herokudoc-theme'
+  use 'erizocosmico/vim-firewatch'
+  use 'ajmwagar/vim-deus'
+  use 'kartik1998/simba.vim'
+  use 'vv9k/bogster'
+  use 'zanglg/nova.nvim'
+  use 'luisiacc/gruvbox-baby'
+  use 'folke/tokyonight.nvim'
+  use 'EdenEast/nightfox.nvim'
 
   -- Complition Engine
   use {
