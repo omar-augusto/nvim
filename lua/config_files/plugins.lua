@@ -25,17 +25,13 @@ packer.startup(function(use)
   }
 
   -- Colorschemes
-  use 'NLKNguyen/papercolor-theme'
-  use 'gerardbm/vim-atomic'
-  use 'humanoid-colors/vim-humanoid-colorscheme'
-  use 'erizocosmico/vim-firewatch'
-  use 'ajmwagar/vim-deus'
-  use 'kartik1998/simba.vim'
-  use 'vv9k/bogster'
   use 'zanglg/nova.nvim'
   use 'luisiacc/gruvbox-baby'
   use 'folke/tokyonight.nvim'
   use 'EdenEast/nightfox.nvim'
+  use 'olimorris/onedarkpro.nvim'
+  use 'dangminhngo/gemstones.nvim'
+  use 'Aryansh-S/fastdark.vim'
 
   -- Complition Engine
   use {
