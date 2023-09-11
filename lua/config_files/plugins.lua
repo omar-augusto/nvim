@@ -68,6 +68,9 @@ packer.startup(function(use)
   -- HTTP Client
   use 'NTBBloodbath/rest.nvim'
 
+  -- Indent Blankline
+  use "lukas-reineke/indent-blankline.nvim"
+
   -- Lua library
   use 'nvim-lua/plenary.nvim'
 
