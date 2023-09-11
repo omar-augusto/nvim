@@ -85,6 +85,9 @@ packer.startup(function(use)
     run = function() vim.fn["mkdp#util#install"]() end,
   })
 
+  -- Multicursor
+  use 'mg979/vim-visual-multi'
+
   -- Neotree
   use {
     'nvim-neo-tree/neo-tree.nvim',
