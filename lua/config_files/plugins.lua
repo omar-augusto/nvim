@@ -32,6 +32,21 @@ packer.startup(function(use)
   use 'olimorris/onedarkpro.nvim'
   use 'dangminhngo/gemstones.nvim'
   use 'Aryansh-S/fastdark.vim'
+  use 'sainnhe/edge'
+  use 'sainnhe/sonokai'
+  use 'sainnhe/everforest'
+  use 'sainnhe/gruvbox-material'
+  use 'nvimdev/zephyr-nvim'
+  use 'xero/miasma.nvim'
+  use 'yazeed1s/oh-lucy.nvim'
+  use 'olivercederborg/poimandres.nvim'
+  use 'rebelot/kanagawa.nvim'
+  use 'Everblush/nvim'
+  use 'yazeed1s/minimal.nvim'
+  use 'lewpoly/sherbet.nvim'
+  use 'Mofiqul/adwaita.nvim'
+  use 'tiagovla/tokyodark.nvim'
+  use 'Avimitin/neovim-deus'
 
   -- Complition Engine
   use {
