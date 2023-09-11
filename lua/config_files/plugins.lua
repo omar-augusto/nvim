@@ -62,6 +62,9 @@ packer.startup(function(use)
   use 'tpope/vim-fugitive' -- Complement to command line git
   use 'airblade/vim-gitgutter' -- Buffer git integration
 
+  -- HTML
+  use "mattn/emmet-vim"
+
   -- HTTP Client
   use 'NTBBloodbath/rest.nvim'
 
