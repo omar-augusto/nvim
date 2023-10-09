@@ -9,7 +9,7 @@ vim.keymap.set('n', 'dw', 'vb"_d')
 -- Git status
 vim.keymap.set('n', 'gs', ':Neotree float git_status<cr>')
 
--- Select all
+-- Select all text in buffer
 vim.keymap.set('n', '<C-a>', 'gg<S-v>G')
 
 -- New tab
