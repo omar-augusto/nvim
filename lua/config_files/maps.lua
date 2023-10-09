@@ -13,7 +13,7 @@ vim.keymap.set('n', 'gs', ':Neotree float git_status<cr>')
 vim.keymap.set('n', '<C-a>', 'gg<S-v>G')
 
 -- New tab
-vim.keymap.set('n', 'te', ':tabedit')
+vim.keymap.set('n', 'te', ':tabedit ')
 
 -- Split window
 vim.keymap.set('n', 'ss', ':split<Return><C-w>w')
