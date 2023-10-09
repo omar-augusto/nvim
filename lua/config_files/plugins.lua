@@ -114,11 +114,11 @@ function plugins(use)
     -- Tree Sitter
     use({
         'nvim-treesitter/nvim-treesitter',
+        'nvim-treesitter/playground',
         run = function()
             require('nvim-treesitter.install').update({ with_sync = true })
         end,
     })
-    use('nvim-treesitter/playground')
 
     -- JSON
     use('elzr/vim-json')
