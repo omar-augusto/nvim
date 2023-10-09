@@ -62,6 +62,12 @@ packer.startup(function(use)
   use 'tpope/vim-fugitive' -- Complement to command line git
   use 'airblade/vim-gitgutter' -- Buffer git integration
 
+  -- Greeter
+  use {
+   'goolord/alpha-nvim',
+    requires = { 'nvim-tree/nvim-web-devicons' },
+  }
+
   -- HTML
   use "mattn/emmet-vim"
 
