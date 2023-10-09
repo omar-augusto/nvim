@@ -25,8 +25,15 @@ vim.keymap.set('n', '<C-k>', '<C-w>k')
 vim.keymap.set('n', '<C-j>', '<C-w>j')
 vim.keymap.set('n', '<C-l>', '<C-w>l')
 
--- Resize window
-vim.keymap.set('n', '<C-w><up>', '<C-w>+')
-vim.keymap.set('n', '<C-w><down>', '<C-w>-')
-vim.keymap.set('n', '<C-w><left>', '<C-w><')
-vim.keymap.set('n', '<C-w><right>', '<C-w>>')
+-------------------
+-- Terminal Mappings
+
+-- Normal mode swichers
+vim.keymap.set('t', '<A-[>', '<Esc>')
+vim.keymap.set('t', '<Esc>', '<c-\\><c-n>')
+
+-- Navigatin between terminal windows
+vim.keymap.set('t', '<A-h>', '<c-\\><c-n><c-w>h')
+vim.keymap.set('t', '<A-j>', '<c-\\><c-n><c-w>j')
+vim.keymap.set('t', '<A-k>', '<c-\\><c-n><c-w>k')
+vim.keymap.set('t', '<A-l>', '<c-\\><c-n><c-w>l')
