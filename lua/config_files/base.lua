@@ -1,5 +1,7 @@
 vim.cmd('autocmd!')
 
+-- stylua: ignore start
+
 -- Look & Feel
 vim.opt.background      = 'dark'
 vim.opt.cursorline      = true
@@ -45,3 +47,5 @@ vim.opt.showcmd         = true
 -- File Paths
 vim.opt.path:append         { '**' }
 vim.opt.wildignore:append   { '*/node_modules/*' }
+
+-- stylua: ignore end
