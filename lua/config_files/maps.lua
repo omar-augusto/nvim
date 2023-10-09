@@ -20,7 +20,6 @@ vim.keymap.set('n', 'ss', ':split<Return><C-w>w')
 vim.keymap.set('n', 'sv', ':vsplit<Return><C-w>w')
 
 -- Navigate windows
-vim.keymap.set('n', '<Space>', '<C-w>w')
 vim.keymap.set('n', '<C-h>', '<C-w>h')
 vim.keymap.set('n', '<C-k>', '<C-w>k')
 vim.keymap.set('n', '<C-j>', '<C-w>j')
