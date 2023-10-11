@@ -1,16 +1,8 @@
-local status, neotree = pcall(require, 'indent_blankline')
+local status, ibl = pcall(require, 'ibl')
 
 if not status then
-  print('indent_blankline package is not installed')
-  return
+    print('Indent-blankLine package is not installed')
+    return
 end
 
-vim.opt.list = true
-vim.opt.listchars:append "space:⋅"
-vim.opt.listchars:append "eol:↴"
-
-require("indent_blankline").setup {
-    space_char_blankline = " ",
-    show_current_context = true,
-    show_current_context_start = true,
-}
+ibl.setup()
