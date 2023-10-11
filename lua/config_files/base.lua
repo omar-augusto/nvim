@@ -2,6 +2,15 @@ vim.cmd('autocmd!')
 
 -- stylua: ignore start
 
+-- Listchars
+vim.opt.list            = true
+vim.opt.listchars:append "space:⋅"
+vim.opt.listchars:append "eol:↴"
+
+-- Folds
+vim.opt.foldmethod      = 'expr'
+vim.opt.foldexpr        = "nvim_treesitter#foldexpr()"
+
 -- Look & Feel
 vim.opt.background      = 'dark'
 vim.opt.cursorline      = true
