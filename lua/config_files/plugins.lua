@@ -57,6 +57,9 @@ function plugins(use)
     use({
         'goolord/alpha-nvim',
         requires = { 'nvim-tree/nvim-web-devicons' },
+        config = function()
+            require('alpha').setup(require('alpha.themes.startify').config)
+        end,
     })
 
     -- HTML
@@ -115,9 +118,7 @@ function plugins(use)
     use({
         'nvim-treesitter/nvim-treesitter',
         'nvim-treesitter/playground',
-        run = function()
-            require('nvim-treesitter.install').update({ with_sync = true })
-        end,
+        run = ':TSUpate',
     })
 
     -- JSON
