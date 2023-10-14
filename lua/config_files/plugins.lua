@@ -6,8 +6,10 @@ function plugins(use)
     use('stevearc/aerial.nvim')
 
     -- Airline
-    use('vim-airline/vim-airline')
-    use('vim-airline/vim-airline-themes')
+    use({
+        'vim-airline/vim-airline',
+        'vim-airline/vim-airline-themes',
+    })
 
     -- Bufferline
     use({
@@ -16,28 +18,30 @@ function plugins(use)
     })
 
     -- Colorschemes
-    use('zanglg/nova.nvim')
-    use('luisiacc/gruvbox-baby')
-    use('folke/tokyonight.nvim')
-    use('EdenEast/nightfox.nvim')
-    use('olimorris/onedarkpro.nvim')
-    use('dangminhngo/gemstones.nvim')
-    use('Aryansh-S/fastdark.vim')
-    use('sainnhe/edge')
-    use('sainnhe/sonokai')
-    use('sainnhe/everforest')
-    use('sainnhe/gruvbox-material')
-    use('nvimdev/zephyr-nvim')
-    use('xero/miasma.nvim')
-    use('yazeed1s/oh-lucy.nvim')
-    use('olivercederborg/poimandres.nvim')
-    use('rebelot/kanagawa.nvim')
-    use('Everblush/nvim')
-    use('yazeed1s/minimal.nvim')
-    use('lewpoly/sherbet.nvim')
-    use('Mofiqul/adwaita.nvim')
-    use('tiagovla/tokyodark.nvim')
-    use('Avimitin/neovim-deus')
+    use({
+        'zanglg/nova.nvim',
+        'sainnhe/edge',
+        'Everblush/nvim',
+        'sainnhe/sonokai',
+        'xero/miasma.nvim',
+        'sainnhe/everforest',
+        'nvimdev/zephyr-nvim',
+        'lewpoly/sherbet.nvim',
+        'Mofiqul/adwaita.nvim',
+        'Avimitin/neovim-deus',
+        'yazeed1s/minimal.nvim',
+        'yazeed1s/oh-lucy.nvim',
+        'luisiacc/gruvbox-baby',
+        'folke/tokyonight.nvim',
+        'rebelot/kanagawa.nvim',
+        'EdenEast/nightfox.nvim',
+        'Aryansh-S/fastdark.vim',
+        'tiagovla/tokyodark.nvim',
+        'sainnhe/gruvbox-material',
+        'olimorris/onedarkpro.nvim',
+        'dangminhngo/gemstones.nvim',
+        'olivercederborg/poimandres.nvim',
+    })
 
     -- Complition Engine
     use({
@@ -49,9 +53,11 @@ function plugins(use)
     use('junegunn/goyo.vim')
 
     -- Git
-    use('tpope/vim-git') -- Syntax, indent, and filetype plugin files for git commits
-    use('tpope/vim-fugitive') -- Complement to command line git
-    use('airblade/vim-gitgutter') -- Buffer git integration
+    use({
+        'tpope/vim-git', -- Syntax, indent, and filetype plugin files for git commits
+        'tpope/vim-fugitive', -- Complement to command line git
+        'airblade/vim-gitgutter', -- Buffer git integration
+    })
 
     -- Greeter
     use({
