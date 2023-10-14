@@ -84,6 +84,12 @@ _G.packer_plugins = {
     path = "/Users/omar/.local/share/nvim/site/pack/packer/start/aerial.nvim",
     url = "https://github.com/stevearc/aerial.nvim"
   },
+  ["alpha-nvim"] = {
+    config = { "\27LJ\2\n`\0\0\5\0\5\0\n6\0\0\0'\2\1\0B\0\2\0029\0\2\0006\2\0\0'\4\3\0B\2\2\0029\2\4\2B\0\2\1K\0\1\0\vconfig\26alpha.themes.startify\nsetup\nalpha\frequire\0" },
+    loaded = true,
+    path = "/Users/omar/.local/share/nvim/site/pack/packer/start/alpha-nvim",
+    url = "https://github.com/goolord/alpha-nvim"
+  },
   ["bufferline.nvim"] = {
     loaded = true,
     path = "/Users/omar/.local/share/nvim/site/pack/packer/start/bufferline.nvim",
@@ -93,6 +99,16 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/omar/.local/share/nvim/site/pack/packer/start/coc.nvim",
     url = "https://github.com/neoclide/coc.nvim"
+  },
+  edge = {
+    loaded = true,
+    path = "/Users/omar/.local/share/nvim/site/pack/packer/start/edge",
+    url = "https://github.com/sainnhe/edge"
+  },
+  ["emmet-vim"] = {
+    loaded = true,
+    path = "/Users/omar/.local/share/nvim/site/pack/packer/start/emmet-vim",
+    url = "https://github.com/mattn/emmet-vim"
   },
   everforest = {
     loaded = true,
@@ -124,6 +140,11 @@ _G.packer_plugins = {
     path = "/Users/omar/.local/share/nvim/site/pack/packer/start/gruvbox-material",
     url = "https://github.com/sainnhe/gruvbox-material"
   },
+  ["indent-blankline.nvim"] = {
+    loaded = true,
+    path = "/Users/omar/.local/share/nvim/site/pack/packer/start/indent-blankline.nvim",
+    url = "https://github.com/lukas-reineke/indent-blankline.nvim"
+  },
   ["kanagawa.nvim"] = {
     loaded = true,
     path = "/Users/omar/.local/share/nvim/site/pack/packer/start/kanagawa.nvim",
@@ -139,11 +160,6 @@ _G.packer_plugins = {
     path = "/Users/omar/.local/share/nvim/site/pack/packer/start/miasma.nvim",
     url = "https://github.com/xero/miasma.nvim"
   },
-  ["mini.nvim#plugin-colorschemes"] = {
-    loaded = true,
-    path = "/Users/omar/.local/share/nvim/site/pack/packer/start/mini.nvim#plugin-colorschemes",
-    url = "https://github.com/echasnovski/mini.nvim#plugin-colorschemes"
-  },
   ["minimal.nvim"] = {
     loaded = true,
     path = "/Users/omar/.local/share/nvim/site/pack/packer/start/minimal.nvim",
@@ -153,6 +169,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/omar/.local/share/nvim/site/pack/packer/start/neo-tree.nvim",
     url = "https://github.com/nvim-neo-tree/neo-tree.nvim"
+  },
+  ["neovim-deus"] = {
+    loaded = true,
+    path = "/Users/omar/.local/share/nvim/site/pack/packer/start/neovim-deus",
+    url = "https://github.com/Avimitin/neovim-deus"
   },
   nerdcommenter = {
     loaded = true,
@@ -179,11 +200,6 @@ _G.packer_plugins = {
     path = "/Users/omar/.local/share/nvim/site/pack/packer/start/nvim",
     url = "https://github.com/Everblush/nvim"
   },
-  ["nvim-deus"] = {
-    loaded = true,
-    path = "/Users/omar/.local/share/nvim/site/pack/packer/start/nvim-deus",
-    url = "https://github.com/theniceboy/nvim-deus"
-  },
   ["nvim-lspconfig"] = {
     loaded = true,
     path = "/Users/omar/.local/share/nvim/site/pack/packer/start/nvim-lspconfig",
@@ -194,8 +210,12 @@ _G.packer_plugins = {
     path = "/Users/omar/.local/share/nvim/site/pack/packer/start/nvim-treesitter",
     url = "https://github.com/nvim-treesitter/nvim-treesitter"
   },
+  ["nvim-web-devicons"] = {
+    loaded = true,
+    path = "/Users/omar/.local/share/nvim/site/pack/packer/start/nvim-web-devicons",
+    url = "https://github.com/nvim-tree/nvim-web-devicons"
+  },
   ["nvim-window-picker"] = {
-    config = { "\27LJ\2\nþ\1\0\0\6\0\f\0\0156\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0005\3\t\0005\4\5\0005\5\4\0=\5\6\0045\5\a\0=\5\b\4=\4\n\3=\3\v\2B\0\2\1K\0\1\0\17filter_rules\abo\1\0\0\fbuftype\1\3\0\0\rterminal\rquickfix\rfiletype\1\0\0\1\4\0\0\rneo-tree\19neo-tree-popup\vnotify\1\0\3\20include_current\1\19autoselect_one\2\23other_win_hl_color\f#e35e4f\nsetup\18window-picker\frequire\0" },
     loaded = true,
     path = "/Users/omar/.local/share/nvim/site/pack/packer/start/nvim-window-picker",
     url = "https://github.com/s1n7ax/nvim-window-picker"
@@ -214,6 +234,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/omar/.local/share/nvim/site/pack/packer/start/packer.nvim",
     url = "https://github.com/wbthomason/packer.nvim"
+  },
+  playground = {
+    loaded = true,
+    path = "/Users/omar/.local/share/nvim/site/pack/packer/start/playground",
+    url = "https://github.com/nvim-treesitter/playground"
   },
   ["plenary.nvim"] = {
     loaded = true,
@@ -244,6 +269,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/omar/.local/share/nvim/site/pack/packer/start/tabular",
     url = "https://github.com/godlygeek/tabular"
+  },
+  ["tokyodark.nvim"] = {
+    loaded = true,
+    path = "/Users/omar/.local/share/nvim/site/pack/packer/start/tokyodark.nvim",
+    url = "https://github.com/tiagovla/tokyodark.nvim"
   },
   ["tokyonight.nvim"] = {
     loaded = true,
@@ -285,6 +315,11 @@ _G.packer_plugins = {
     path = "/Users/omar/.local/share/nvim/site/pack/packer/start/vim-markdown",
     url = "https://github.com/plasticboy/vim-markdown"
   },
+  ["vim-visual-multi"] = {
+    loaded = true,
+    path = "/Users/omar/.local/share/nvim/site/pack/packer/start/vim-visual-multi",
+    url = "https://github.com/mg979/vim-visual-multi"
+  },
   ["zephyr-nvim"] = {
     loaded = true,
     path = "/Users/omar/.local/share/nvim/site/pack/packer/start/zephyr-nvim",
@@ -293,10 +328,10 @@ _G.packer_plugins = {
 }
 
 time([[Defining packer_plugins]], false)
--- Config for: nvim-window-picker
-time([[Config for nvim-window-picker]], true)
-try_loadstring("\27LJ\2\nþ\1\0\0\6\0\f\0\0156\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0005\3\t\0005\4\5\0005\5\4\0=\5\6\0045\5\a\0=\5\b\4=\4\n\3=\3\v\2B\0\2\1K\0\1\0\17filter_rules\abo\1\0\0\fbuftype\1\3\0\0\rterminal\rquickfix\rfiletype\1\0\0\1\4\0\0\rneo-tree\19neo-tree-popup\vnotify\1\0\3\20include_current\1\19autoselect_one\2\23other_win_hl_color\f#e35e4f\nsetup\18window-picker\frequire\0", "config", "nvim-window-picker")
-time([[Config for nvim-window-picker]], false)
+-- Config for: alpha-nvim
+time([[Config for alpha-nvim]], true)
+try_loadstring("\27LJ\2\n`\0\0\5\0\5\0\n6\0\0\0'\2\1\0B\0\2\0029\0\2\0006\2\0\0'\4\3\0B\2\2\0029\2\4\2B\0\2\1K\0\1\0\vconfig\26alpha.themes.startify\nsetup\nalpha\frequire\0", "config", "alpha-nvim")
+time([[Config for alpha-nvim]], false)
 
 _G._packer.inside_compile = false
 if _G._packer.needs_bufread == true then
