@@ -94,6 +94,7 @@ local config = {
         sections.buttons,
         { type = 'padding', val = 1 },
         sections.mru_cwd,
+        { type = "padding", val = 2 },
     },
     opts = {
         margin = divwidth(3),
