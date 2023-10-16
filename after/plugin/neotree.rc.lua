@@ -56,7 +56,7 @@ neotree.setup({
             expander_collapsed = '',
         },
         name = {
-            trailing_slash = false,
+            trailing_slash = true,
             use_git_status_colors = true,
         },
         file_size = {
