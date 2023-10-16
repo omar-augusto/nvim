@@ -59,6 +59,21 @@ neotree.setup({
             trailing_slash = true,
             use_git_status_colors = true,
         },
+        git_status = {
+            symbols = {
+              -- Change type
+              added     = " ",
+              modified  = " ",
+              deleted   = "✖ ",
+              renamed   = " ",
+              -- Status type
+              untracked = " ",
+              ignored   = " ",
+              unstaged  = "☐ ",
+              staged    = "☑ ",
+              conflict  = "☒ ",
+            }
+          },
         file_size = {
             enabled = true,
             required_width = 64,
