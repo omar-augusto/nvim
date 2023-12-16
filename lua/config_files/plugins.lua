@@ -118,6 +118,9 @@ function plugins(use)
     -- Text Alignment
     use('godlygeek/tabular')
 
+    -- Theme Selector
+    use('zaldih/themery.nvim')
+
     -- Tree Sitter
     use({
         'nvim-treesitter/nvim-treesitter',
