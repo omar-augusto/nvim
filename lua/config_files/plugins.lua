@@ -41,6 +41,7 @@ function plugins(use)
         'olimorris/onedarkpro.nvim',
         'dangminhngo/gemstones.nvim',
         'olivercederborg/poimandres.nvim',
+        'nyoom-engineering/oxocarbon.nvim',
     })
 
     -- Complition Engine
