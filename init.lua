@@ -1,3 +1,4 @@
+require('settings.theme')
 require('config.base')
 require('config.maps')
 require('config.windows')
