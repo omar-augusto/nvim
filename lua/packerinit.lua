@@ -7,4 +7,4 @@ end
 
 vim.cmd [[packadd packer.nvim]]
 
-packer.startup(require('config_files/plugins'))
+packer.startup(require('config/plugins'))
