@@ -97,7 +97,7 @@ neotree.setup({
     },
 
     window = {
-        position = 'float',
+        position = 'current',
         mapping_options = {
             nowait  = true,
             noremap = true,
