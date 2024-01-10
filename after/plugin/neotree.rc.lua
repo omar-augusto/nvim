@@ -108,6 +108,6 @@ neotree.setup({
 -- stylua: ignore end
 
 vim.cmd([[nnoremap / :Neotree toggle current reveal_force_cwd<cr>]])
-vim.cmd([[nnoremap \| :Neotree focus filesystem left reveal toggle<cr>]])
+vim.cmd([[nnoremap \| :Neotree focus filesystem float reveal toggle<cr>]])
 vim.cmd([[nnoremap <leader>b :Neotree toggle show buffers right<cr>]])
 vim.cmd([[nnoremap gs :Neotree float git_status<cr>]])
