@@ -44,12 +44,6 @@ function plugins(use)
         'nyoom-engineering/oxocarbon.nvim',
     })
 
-    -- Complition Engine
-    use({
-        'neoclide/coc.nvim',
-        branch = 'release',
-    })
-
     -- Distraction-free mode
     use('junegunn/goyo.vim')
 
