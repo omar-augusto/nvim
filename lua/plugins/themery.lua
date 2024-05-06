@@ -7,7 +7,14 @@ local setup = function()
         'deus',
         'edge',
         'everblush',
-        'everforest',
+        {
+            name = 'everforest',
+            colorscheme = 'everforest',
+            before = [[
+                vim.g.everforest_background = 'hard'
+                require('lualine').setup({ options = { theme = 'everforest'} })
+            ]],
+        },
         'fastdark',
         'gruvbox-baby',
         'gruvbox-material',
