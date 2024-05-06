@@ -1,4 +1,4 @@
-require('lazy')
+require('lazy_bootstrap')
 require('theme')
 require('config.providers')
 require('config.base')
