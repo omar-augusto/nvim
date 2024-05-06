@@ -22,6 +22,7 @@
   "miasma.nvim": { "branch": "main", "commit": "c672feec07d4e77ac485ee58e3432a96ebe51953" },
   "minimal.nvim": { "branch": "main", "commit": "22d837b814d3bd22625640ef63cc73b8507f291d" },
   "neo-tree.nvim": { "branch": "v3.x", "commit": "7aad1bf3f6b849cbf108e02c55ad4d701cb4d33a" },
+  "neovim": { "branch": "main", "commit": "17b466e79479758b332a3cac12544a3ad2be6241" },
   "neovim-deus": { "branch": "master", "commit": "5b8cf650e95aaaa6ee5ed5ddec2867189bedbff0" },
   "nerdcommenter": { "branch": "master", "commit": "e361a44230860d616f799a337bc58f5218ab6e9c" },
   "nightfox.nvim": { "branch": "main", "commit": "df75a6a94910ae47854341d6b5a6fd483192c0eb" },
