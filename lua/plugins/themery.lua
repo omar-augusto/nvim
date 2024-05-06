@@ -1,12 +1,5 @@
-local status, themery = pcall(require, 'themery')
-
-if not status then
-    print('Themery package is not installed.')
-    return
-end
-
-themery.setup({
-    themes = {
+local setup = function()
+    local THEMES = {
         'nova',
         'edge',
         'everblush',
@@ -43,7 +36,20 @@ themery.setup({
         'gemstones',
         'poimandres',
         'oxocarbon',
-    },
-    themeConfigFile = '~/.config/nvim/lua/settings/theme.lua',
-    livePreview = true,
-})
+    }
+
+    return {
+        themes = THEMES,
+        themeConfigFile = '~/.config/nvim/lua/theme.lua',
+        livePreview = true,
+    }
+end
+
+local config = function()
+    require('themery').setup(setup())
+end
+
+return {
+    'zaldih/themery.nvim',
+    config = config,
+}

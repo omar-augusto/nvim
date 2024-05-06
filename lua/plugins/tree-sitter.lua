@@ -1,11 +1,4 @@
-local status, TS = pcall(require, 'nvim-treesitter.configs')
-
-if not status then
-    print('Treesitter package is not installed.')
-    return
-end
-
-function treesittertrunc(lang, buf)
+local function treesittertrunc(_, buf)
     local max_filesize = 100 * 1024 -- 100 KB
     local ok, stats = pcall(vim.loop.fs_stat, vim.api.nvim_buf_get_name(buf))
 
@@ -14,8 +7,8 @@ function treesittertrunc(lang, buf)
     end
 end
 
-TS.setup({
-    ensure_installed = {
+local setup = function()
+    local ENSURE_INSTALLED = {
         'typescript',
         'javascript',
         'lua',
@@ -24,14 +17,29 @@ TS.setup({
         'json',
         'python',
         'jsdoc',
-    },
+    }
 
-    auto_install = true,
-
-    highlight = {
+    local highlight = {
         enable = true,
         -- Disable slow treesitter highlight for large files
         disable = treesittertrunc,
         additional_vim_regex_highlighting = false,
-    },
-})
+    }
+
+    return {
+        auto_install = true,
+        highlight = highlight,
+        ensure_installed = ENSURE_INSTALLED,
+    }
+end
+
+local config = function()
+    require('nvim-treesitter.configs').setup(setup())
+end
+
+return {
+    'nvim-treesitter/nvim-treesitter',
+    dependencies = 'nvim-treesitter/playground',
+    build = ':TSUpate',
+    config = config,
+}
