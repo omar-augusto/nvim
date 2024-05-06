@@ -4,7 +4,7 @@ local function config()
     vim.opt.updatetime = 100
 
     -- Sets SignColumn background color, theme overwrites it
-    vim.cmd [[highlight SignColumn guibg=dark ctermbg=0]]
+    vim.cmd([[highlight SignColumn guibg=dark ctermbg=0]])
 
     -- Display the signcolumn by default
     vim.opt.signcolumn = 'yes'
@@ -17,10 +17,7 @@ local function config()
 end
 
 return {
-    'airblade/vim-gitgutter',
-    -- Syntax, indent, and filetype plugin files for git commits
-    'tpope/vim-git',
-    -- Complement to command line git
+    { 'airblade/vim-gitgutter', config = config },
+    -- Command git integration
     'tpope/vim-fugitive',
-    config = config
 }
