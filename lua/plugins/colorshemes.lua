@@ -1,4 +1,5 @@
 return {
+    { 'rose-pine/neovim', as = 'rose-pine' },
     'Aryansh-S/fastdark.vim',
     'Avimitin/neovim-deus',
     'EdenEast/nightfox.nvim',

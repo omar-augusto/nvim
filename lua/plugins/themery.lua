@@ -27,6 +27,7 @@ local setup = function()
         'onelight',
         'oxocarbon',
         'poimandres',
+        'rose-pine',
         'sherbet',
         'sonokai',
         'terafox',
