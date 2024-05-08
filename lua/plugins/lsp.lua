@@ -89,6 +89,6 @@ return {
             'saadparwaiz1/cmp_luasnip',
             'L3MON4D3/LuaSnip',
         },
-        config = lsp_config
+        config = lsp_config,
     },
 }
