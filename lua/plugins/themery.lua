@@ -1,12 +1,25 @@
 local setup = function()
     local THEMES = {
-        'adwaita',
-        'carbonfox',
-        'dawnfox',
-        'dayfox',
-        'deus',
-        'edge',
-        'everblush',
+        {
+            name = 'adwaita',
+            colorscheme = 'adwaita',
+            before = [[ require('lualine').setup({ options = { theme = 'auto' } }) ]]
+        },
+        {
+            name = 'deus',
+            colorscheme = 'deus',
+            before = [[ require('lualine').setup({ options = { theme = 'auto' } }) ]]
+        },
+        {
+            name = 'edge',
+            colorscheme = 'edge',
+            before = [[ require('lualine').setup({ options = { theme = 'auto' } }) ]]
+        },
+        {
+            name = 'everblush',
+            colorscheme = 'everblush',
+            before = [[ require('lualine').setup({ options = { theme = 'auto' } }) ]]
+        },
         {
             name = 'everforest',
             colorscheme = 'everforest',
@@ -15,30 +28,156 @@ local setup = function()
                 require('lualine').setup({ options = { theme = 'everforest'} })
             ]],
         },
-        'fastdark',
-        'gruvbox-baby',
-        'gruvbox-material',
-        'kanagawa-dragon',
-        'kanagawa-lotus',
-        'kanagawa-wave',
-        'miasma',
-        'minimal',
-        'nightfox',
-        'nordfox',
-        'nova',
-        'oh-lucy',
-        'oxocarbon',
-        'poimandres',
-        'rose-pine',
-        'sherbet',
-        'sonokai',
-        'terafox',
-        'tokyodark',
-        'tokyonight-day',
-        'tokyonight-moon',
-        'tokyonight-night',
-        'tokyonight-storm',
-        'zephyr',
+        {
+            name = 'fastdark',
+            colorscheme = 'fastdark',
+            before = [[ require('lualine').setup({ options = { theme = 'auto' } }) ]]
+        },
+        {
+            name = 'fox ------------------------------------ carbon',
+            colorscheme = 'carbonfox',
+            before = [[ require('lualine').setup({ options = { theme = 'auto' } }) ]]
+        },
+        {
+            name = 'fox ------------------------------------ dawn',
+            colorscheme = 'dawnfox',
+            before = [[ require('lualine').setup({ options = { theme = 'auto' } }) ]]
+        },
+        {
+            name = 'fox ------------------------------------ day',
+            colorscheme = 'dayfox',
+            before = [[ require('lualine').setup({ options = { theme = 'auto' } }) ]]
+        },
+        {
+            name = 'fox ------------------------------------ dusk',
+            colorscheme = 'duskfox',
+            before = [[ require('lualine').setup({ options = { theme = 'auto' } }) ]]
+        },
+        {
+            name = 'fox ------------------------------------ night',
+            colorscheme = 'nightfox',
+            before = [[ require('lualine').setup({ options = { theme = 'solarized_dark' } }) ]]
+        },
+        {
+            name = 'fox ------------------------------------ nord',
+            colorscheme = 'nordfox',
+            before = [[ require('lualine').setup({ options = { theme = 'auto' } }) ]]
+        },
+        {
+            name = 'fox ------------------------------------ tera',
+            colorscheme = 'terafox',
+            before = [[ require('lualine').setup({ options = { theme = 'auto' } }) ]]
+        },
+        {
+            name = 'gruvbox -------------------------------- baby',
+            colorscheme = 'gruvbox-baby',
+            before = [[ require('lualine').setup({ options = { theme = 'auto' } }) ]]
+        },
+        {
+            name = 'gruvbox -------------------------------- material',
+            colorscheme = 'gruvbox-material',
+            before = [[ require('lualine').setup({ options = { theme = 'auto' } }) ]]
+        },
+        {
+            name = 'kanagawa ------------------------------- dragon',
+            colorscheme = 'kanagawa-dragon',
+            before = [[ require('lualine').setup({ options = { theme = 'auto' } }) ]]
+        },
+        {
+            name = 'kanagawa ------------------------------- lotus',
+            colorscheme = 'kanagawa-lotus',
+            before = [[ require('lualine').setup({ options = { theme = 'auto' } }) ]]
+        },
+        {
+            name = 'kanagawa ------------------------------- wave',
+            colorscheme = 'kanagawa-wave',
+            before = [[ require('lualine').setup({ options = { theme = 'auto' } }) ]]
+        },
+        {
+            name = 'miasma',
+            colorscheme = 'miasma',
+            before = [[ require('lualine').setup({ options = { theme = 'auto' } }) ]]
+        },
+        {
+            name = 'minimal',
+            colorscheme = 'minimal',
+            before = [[ require('lualine').setup({ options = { theme = 'auto' } }) ]]
+        },
+        {
+            name = 'nova',
+            colorscheme = 'nova',
+            before = [[ require('lualine').setup({ options = { theme = 'auto' } }) ]]
+        },
+        {
+            name = 'oh-lucy',
+            colorscheme = 'oh-lucy',
+            before = [[ require('lualine').setup({ options = { theme = 'auto' } }) ]]
+        },
+        {
+            name = 'oxocarbon',
+            colorscheme = 'oxocarbon',
+            before = [[ require('lualine').setup({ options = { theme = 'auto' } }) ]]
+        },
+        {
+            name = 'poimandres',
+            colorscheme = 'poimandres',
+            before = [[ require('lualine').setup({ options = { theme = 'auto' } }) ]]
+        },
+        {
+            name = 'rose-pine ------------------------------ main',
+            colorscheme = 'rose-pine-main',
+            before = [[ require('lualine').setup({ options = { theme = 'nightfly' } }) ]]
+        },
+        {
+            name = 'rose-pine ------------------------------ dawn',
+            colorscheme = 'rose-pine-dawn',
+            before = [[ require('lualine').setup({ options = { theme = 'nightfly' } }) ]]
+        },
+        {
+            name = 'rose-pine ------------------------------ moon',
+            colorscheme = 'rose-pine-moon',
+            before = [[ require('lualine').setup({ options = { theme = 'nightfly' } }) ]]
+        },
+        {
+            name = 'sherbet',
+            colorscheme = 'sherbet',
+            before = [[ require('lualine').setup({ options = { theme = 'auto' } }) ]]
+        },
+        {
+            name = 'sonokai',
+            colorscheme = 'sonokai',
+            before = [[ require('lualine').setup({ options = { theme = 'auto' } }) ]]
+        },
+        {
+            name = 'tokyodark',
+            colorscheme = 'tokyodark',
+            before = [[ require('lualine').setup({ options = { theme = 'auto' } }) ]]
+        },
+        {
+            name = 'tokyonight ----------------------------- day',
+            colorscheme = 'tokyonight-day',
+            before = [[ require('lualine').setup({ options = { theme = 'auto' } }) ]]
+        },
+        {
+            name = 'tokyonight ----------------------------- moon',
+            colorscheme = 'tokyonight-moon',
+            before = [[ require('lualine').setup({ options = { theme = 'auto' } }) ]]
+        },
+        {
+            name = 'tokyonight ----------------------------- night',
+            colorscheme = 'tokyonight-night',
+            before = [[ require('lualine').setup({ options = { theme = 'auto' } }) ]]
+        },
+        {
+            name = 'tokyonight ----------------------------- storm',
+            colorscheme = 'tokyonight-storm',
+            before = [[ require('lualine').setup({ options = { theme = 'auto' } }) ]]
+        },
+        {
+            name = 'zephyr',
+            colorscheme = 'zephyr',
+            before = [[ require('lualine').setup({ options = { theme = 'auto' } }) ]]
+        },
     }
 
     return {
