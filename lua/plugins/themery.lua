@@ -124,13 +124,13 @@ local setup = function()
             before = [[ require('lualine').setup({ options = { theme = 'auto' } }) ]]
         },
         {
-            name = 'rose-pine ------------------------------ main',
-            colorscheme = 'rose-pine-main',
+            name = 'rose-pine ------------------------------ dawn',
+            colorscheme = 'rose-pine-dawn',
             before = [[ require('lualine').setup({ options = { theme = 'nightfly' } }) ]]
         },
         {
-            name = 'rose-pine ------------------------------ dawn',
-            colorscheme = 'rose-pine-dawn',
+            name = 'rose-pine ------------------------------ main',
+            colorscheme = 'rose-pine-main',
             before = [[ require('lualine').setup({ options = { theme = 'nightfly' } }) ]]
         },
         {
