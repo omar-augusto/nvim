@@ -1,5 +1,5 @@
 -- Python
-vim.g.python3_host_prog = '/Users/augusto/.pyenv/versions/neovim/bin/python'
+vim.g.python3_host_prog = '/Users/augusto/.pyenv/versions/neovim/bin/python3.11'
 
 -- Ruby
 vim.g.loaded_ruby_provider = 0
