@@ -55,6 +55,20 @@ local lsp_config = function()
 
     autocmp_setup()
 
+    vim.diagnostic.config({
+        virtual_text = false,
+        float = {
+            source = "always",
+            border = "rounded",
+        },
+    })
+
+    vim.api.nvim_create_autocmd("CursorHold", {
+        callback = function()
+            vim.diagnostic.open_float(nil, { focusable = false })
+        end,
+    })
+
     vim.keymap.set('n', 'K', vim.lsp.buf.hover, {})
     vim.keymap.set('n', 'crr', vim.lsp.buf.code_action, {})
     vim.keymap.set('v', '<C-R>r', vim.lsp.buf.code_action, {})
