@@ -1,4 +1,4 @@
-local SERVERS = { 'lua_ls', 'pyright', 'tsserver', 'phpactor' }
+local SERVERS = { 'lua_ls', 'pyright', 'tsserver', 'phpactor', 'jsonls', 'eslint' }
 
 local autocmp_setup = function()
     local luasnip = require('luasnip')
