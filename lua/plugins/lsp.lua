@@ -45,6 +45,19 @@ local autocmp_setup = function()
     })
 end
 
+local function copy_diagnostics_to_clipboard()
+    local cursor_pos = vim.api.nvim_win_get_cursor(0)
+    local diagnostics = vim.diagnostic.get(0, { lnum = cursor_pos[1] - 1 })
+
+    if #diagnostics > 0 then
+        local diagnostic_message = diagnostics[1].message
+        vim.fn.setreg('+', diagnostic_message)
+        print("Diagnostic at cursor copied to clipboard!")
+    else
+        print("No diagnostics found at the cursor position.")
+    end
+end
+
 local lsp_config = function()
     local lsp = require('lspconfig')
     local capabilities = require('cmp_nvim_lsp').default_capabilities()
@@ -78,6 +91,7 @@ local lsp_config = function()
     vim.keymap.set('n', '[d', vim.diagnostic.goto_prev, {})
     vim.keymap.set('n', ']d', vim.diagnostic.goto_next, {})
     vim.keymap.set('n', '<C-W>d', vim.diagnostic.open_float, {})
+    vim.keymap.set('n', '<C-W>y', copy_diagnostics_to_clipboard, { noremap = true, silent = true })
 end
 
 local mson_config = function()
