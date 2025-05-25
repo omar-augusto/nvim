@@ -1,4 +1,22 @@
 return {
+    {
+        'AlexvZyl/nordic.nvim',
+        lazy = false,
+        priority = 1000,
+        config = function()
+            require('nordic').load()
+        end,
+    },
+    {
+        'bluz71/vim-nightfly-colors',
+        name = 'nightfly',
+        lazy = false,
+        priority = 1000,
+    },
+    {
+        'kimjbaran/voyager.nvim',
+        lazy = false,
+    },
     { 'rose-pine/neovim', as = 'rose-pine' },
     'Aryansh-S/fastdark.vim',
     'Avimitin/neovim-deus',
