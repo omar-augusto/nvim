@@ -99,6 +99,11 @@ local setup = function()
             before = [[ require('lualine').setup({ options = { theme = 'auto' } }) ]],
         },
         {
+            name = 'monalisa',
+            colorscheme = 'monalisa',
+            before = [[ require('lualine').setup({ options = { theme = 'auto' } }) ]],
+        },
+        {
             name = 'nightfly',
             colorscheme = 'nightfly',
             before = [[ require('lualine').setup({ options = { theme = 'auto' } }) ]],
